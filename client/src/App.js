@@ -8,7 +8,7 @@ let socket;
 
 
 function App() {
-  const SOCKET_URL = 'http://localhost:5000/';
+  const SOCKET_URL = 'https://reactjs-live-chat.herokuapp.com/';
   const [loggedIn, setLoggedIn] = useState(false);
   const [room, setRoom] = useState("Public");
   const [userName, setUserName] = useState("");

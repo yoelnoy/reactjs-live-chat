@@ -69,9 +69,6 @@ app.get('/',(req,res) => {
   return res.status(200).json({message:"welcome to the backend"})
 })
 
-/* server.listen("4001", () => {
-  console.log("Server Running on Port 4001...");
-}); */
 server.listen(PORT, () => {
   console.log("Server Running on Port: " + PORT);
 });
