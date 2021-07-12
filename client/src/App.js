@@ -8,8 +8,11 @@ let socket;
 
 
 function App() {
-  const SOCKET_URL = 'https://reactjs-live-chat.herokuapp.com/';
-  const [loggedIn, setLoggedIn] = useState(false);
+  //const SOCKET_URL = 'https://reactjs-live-chat.herokuapp.com/';
+  const SOCKET_URL = process.env.NODE_ENV === 'production' ? 'https://reactjs-live-chat.herokuapp.com/' : 'http://localhost:5000/api';
+  console.log(SOCKET_URL);
+  console.log(process.env.NODE_ENV);
+  const [loggedIn, setLoggedIn] = useState(false); 
   const [room, setRoom] = useState("Public");
   const [userName, setUserName] = useState("");
   const [userImg, setUserImage] = useState("");
