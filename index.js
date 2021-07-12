@@ -5,6 +5,8 @@ const server = http.createServer(app);
 const io = require("socket.io")(server,{cors:'*:*'});
 const cors = require("cors");
 const { SSL_OP_NO_TICKET } = require("constants");
+const PORT = process.env.PORT || 5000
+//.listen(process.env.PORT || 5000)
 
 app.use(cors());
 
@@ -67,6 +69,10 @@ app.get('/',(req,res) => {
   return res.status(200).json({message:"welcome to the backend"})
 })
 
-server.listen("4001", () => {
+/* server.listen("4001", () => {
   console.log("Server Running on Port 4001...");
+}); */
+server.listen(PORT, () => {
+  console.log("Server Running on Port: " + PORT);
 });
+
