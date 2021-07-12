@@ -1,0 +1,89 @@
+.message__container{
+  background-color: aliceblue;
+  margin: 0.5em;
+  width: fit-content;
+  display: contents;
+}
+
+.message__userCard {
+  margin-left: auto;
+  text-align: right !important;
+  width: fit-content;
+  max-width: 55%; 
+  margin-bottom: 1.5%;
+}
+
+.message__guestCard {
+  margin-right: auto;
+  text-align: left !important;
+  width: fit-content;
+  max-width: 55%; 
+  margin-bottom: 1.5%;
+}
+
+.message__content_user{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.message__content_guest{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.message__user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 2rem;
+  min-height: 1rem;
+  font-size: medium !important;
+  margin: 0px 7px 0px 7px;
+  background-color: white;
+  border-radius: 50%;
+  width: 45px;
+}
+
+.message__messageUser{
+  width: fit-content;
+  height: fit-content;
+  margin: 0vh 0.5vw 0px 0vw;  
+  padding: 0.7em 1em 0.7em 1em;
+  text-align: right !important;
+  border-radius: 30px;
+  background-color: #3f51b5;
+  color: white;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+
+}
+
+.message__messageGuest{
+  width: fit-content;
+  height: fit-content;
+  margin: 0vh 0.5vw 0px 0vw;
+  padding: 0.7em 1em 0.7em 1em;
+  text-align: left !important;
+  border-radius: 30px;
+  background-color: white;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.message_messageText{
+  max-width: 20vw;
+  width: 90%;
+  border: solid;
+}
+
+.message_spanTimeStamp{
+  font-size: 0.8rem !important;
+  text-align: left !important;
+  font-weight: 400;
+  margin-top: auto !important;
+  color: #3f51b5;
+  /* margin-right: 2%; */
+  min-width: 35px;
+}

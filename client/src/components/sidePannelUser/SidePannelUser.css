@@ -1,0 +1,79 @@
+.MuiCardContent-root:last-child {
+  padding: 0px !important;
+}
+
+.MuiCardContent-root {
+  padding: 0px !important;
+}
+
+.sidePannelUser__card_notTyping:hover, .sidePannelUser__card_typing:hover {
+  background-color: #3f51b5;
+  color: white;
+  border-radius: 0px !important;
+}
+.sidePannelUser__card_typing{
+  background-color: white;
+  font-weight: 700;
+  animation: typing 0.3s ease-in forwards !important;
+}
+@keyframes typing {
+  from {background-color: white;}
+  to {background-color: #ebeeff;}
+}
+
+.sidePannelUser__card_notTyping{
+  /* padding: 2vh 0vh 1vh 3vh; */
+  animation: notTyping 0.4s ease-in !important;
+}
+@keyframes notTyping {
+  from {background-color: #ebeeff;}
+  to {background-color: white;}
+}
+
+.sidePannelUser__card_content{
+  display: flex;
+  flex-direction: column;
+  padding: 1vh 1vh 1vh 1vh;
+  border-bottom: solid 0.5px #f0f0f0;
+  position: relative;
+}
+
+.sidePannelUser__upperDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sidePannelUser__upperDiv img{
+  border-radius: 50%;
+  width: 30px;
+  margin-right: 3%;
+}
+
+.sidePannelUser__user{
+  width: max-content;
+  flex-grow: 1;
+  font-size: 0.9rem;
+}
+
+.sidePannelUser__typing{
+  height: 2vh;
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 31px;
+  margin-left: 3%;
+  position: absolute;
+  bottom: 6%;
+  font-weight: 500;
+}
+
+.sidePannelUser__icon{
+  min-width: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3%;
+  color: #3ccb3c;
+}

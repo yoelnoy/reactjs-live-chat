@@ -1,0 +1,15 @@
+.messages {
+  height: 75vh;
+  overflow-y: auto;
+  width: 75%;
+  margin: auto;
+  padding: 1em 0em 1em 0em;
+}
+
+.msgtest{
+  animation: fadeIn 0.1s ease-in !important;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

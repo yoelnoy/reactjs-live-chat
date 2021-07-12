@@ -1,0 +1,38 @@
+.chat__window{
+  display: flex;
+  width: 100vw;
+  background-color: white;
+}
+
+.chatContainer {
+  width: 80vw;
+  min-width: 400px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+
+/* Scrollbar configuration */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  margin: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #ffffff00; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 10px #aaaaaa; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

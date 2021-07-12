@@ -1,0 +1,72 @@
+.chooseRoom_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url('../../../utils/media/forest_background_trans.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.chooseRoom__background{
+  background-color: white;
+  width: 30vw;
+  min-width: 430px;
+  height: 45vh;
+  opacity: 0.6;
+  position: absolute;
+}
+
+.chooseRoom__content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 25vw;
+  min-width: 400px;
+  height: 38vh;
+  z-index: 2;
+  position: absolute;
+}
+
+.chooseRoom__backButton{
+  margin-bottom: 3%;
+  color: #3f51b5;
+  font-size: 1.3rem;
+}
+
+.inputs{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+} 
+
+.inputs_textField{
+  margin-top: 4% !important;
+  border-radius: 0px !important;
+  background-color: white;
+} 
+
+.chooseRoom__content button{
+  border-radius: 0px;
+  background-color: #3f51b5;
+  color: white;
+  box-shadow: 0px !important;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.MuiButton-contained {
+  box-shadow: none !important;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 0px !important;
+}
+.MuiInputLabel-outlined {
+  width: 92%;
+  text-align: center !important;
+}

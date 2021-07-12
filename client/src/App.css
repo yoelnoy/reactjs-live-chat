@@ -1,0 +1,15 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%; 
+  font-family: roboto;
+  /* border: solid 0.5px; */
+}
+.App {
+  display: grid;
+  /* place-items: center; */
+  height: 100%;
+  width: 100%; 
+  background-color: #3f51b5;
+}

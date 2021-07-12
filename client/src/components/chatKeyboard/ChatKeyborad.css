@@ -1,0 +1,65 @@
+.messageInputs{
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 2%;
+}
+.messageInputs__keyboard{
+  width: 90%;
+  box-shadow: 0px 0px 6px 1px #dcdcdc78;
+  border-radius: 20px !important;
+  background-color: white;
+  display: flex;
+}
+
+.messageInputs__keyboard input{
+  /* border: solid 0.5px #00000057; */
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  padding: 1.5% !important;
+  flex-grow: 1 !important;
+  border: none;
+}
+
+.messageInputs__keyboard Button {
+  width: 7vw;
+  border-radius: 0px !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+.emoji{
+  display: flex;
+  align-items: center;
+  margin-right: 1%;
+}
+
+.MuiSvgIcon-root {
+  font-size: 2rem !important;
+}
+
+.messageInput{
+  height: 6vh;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.app_picker_show{
+  animation: emoji-slide-in 0.3s ease-in;
+  position: absolute;
+  bottom: 14%;
+  right: 11%;
+}
+
+@keyframes emoji-slide-in {
+  from{ transform: translateX(90%) }
+  to{ transform: translateX(0%) }
+}
+
+.app_picker_hide{
+  display: none;
+}

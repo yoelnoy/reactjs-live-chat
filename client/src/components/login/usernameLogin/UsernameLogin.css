@@ -1,0 +1,61 @@
+.logIn_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.usernameLogin__background{
+  background-color: white;
+  width: 30vw;
+  min-width: 430px;
+  height: 52vh;
+  opacity: 0.6;
+  position: absolute;
+}
+
+.usernameLogin__content{
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  min-width: 400px;
+  height: 38vh;
+  z-index: 2;
+  position: absolute;
+}
+
+.usernameLogin__backButton{
+  margin-bottom: 3%;
+  color: #3f51b5;
+  font-size: 1.3rem;
+}
+
+.inputs{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+} 
+
+.inputs_textField{
+  margin-top: 4% !important;
+  border-radius: 0px !important;
+  background-color: white;
+} 
+
+.usernameLogin__content button{
+  border-radius: 0px;
+  background-color: #3f51b5;
+  color: white;
+  box-shadow: 0px !important;
+  margin-top: 10%;
+}
+
+.MuiButton-contained {
+  box-shadow: none !important;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 0px !important;
+}
