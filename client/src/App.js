@@ -9,7 +9,7 @@ let socket;
 
 function App() {
   //const SOCKET_URL = 'https://reactjs-live-chat.herokuapp.com/';
-  const SOCKET_URL = process.env.NODE_ENV === 'production' ? 'https://reactjs-live-chat.herokuapp.com/' : 'http://localhost:5000/api';
+  const SOCKET_URL = process.env.NODE_ENV === 'production' ? 'https://reactjs-live-chat.herokuapp.com/api' : 'http://localhost:5000/api';
   console.log(SOCKET_URL);
   console.log(process.env.NODE_ENV);
   const [loggedIn, setLoggedIn] = useState(false); 
