@@ -69,6 +69,10 @@ app.get('/',(req,res) => {
   return res.status(200).json({message:"welcome to the backend"})
 })
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+}
+
 server.listen(PORT, () => {
   console.log("Server Running on Port: " + PORT);
 });
