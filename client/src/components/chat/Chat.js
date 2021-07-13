@@ -59,6 +59,7 @@ export default function Chat({ socket, room, setRoom, userImg, userName, setUser
     <ChatMessages 
       userName = {userName}
       messageList = {messageList}
+      room = {room}
     />
   )
 

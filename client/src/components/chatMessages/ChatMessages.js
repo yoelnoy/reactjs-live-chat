@@ -3,7 +3,7 @@ import './ChatMessages.css'
 import Message from '../message/Message'
 import ScrollDownButton from '../scrollDownButton/ScrollDownButton'
 
-export default function ChatMessages({ messageList, userName }) {
+export default function ChatMessages({ messageList, userName, room }) {
   
   const [scrolling, setScrolling] = useState('');
   const scrollToBottomRef = useRef();
@@ -27,6 +27,7 @@ export default function ChatMessages({ messageList, userName }) {
 
   return (
     <div id="chatBodyId" className="messages">
+      <div className="welcome-div"><span className="welcome-msg">{`${userName}, welcome to ${room} room`}</span></div>
       
       {messageList.map((msg, index) => {
           return (
