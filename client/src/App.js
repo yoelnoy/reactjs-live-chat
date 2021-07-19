@@ -3,6 +3,7 @@ import './App.css';
 import { io } from "socket.io-client";
 import Login from './components/login/Login'
 import Chat from './components/chat/Chat'
+import LoginScreen from './components/login/loginScreen/LoginScreen'
 
 let socket;
 
@@ -81,7 +82,8 @@ function App() {
 
   return (
     <div className="App">
-      {loggedIn ? chat : login}      
+      {/* {loggedIn ? chat : login}       */}
+      <LoginScreen />      
     </div>
   );
 }
