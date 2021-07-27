@@ -14,7 +14,7 @@ export default function Login({ setLoggedIn, socket, setUserName, userName, room
     setGoogleLogScreen(googleLogScreen => !googleLogScreen);
   }
 
-  const google = (
+  const googleLog = (
     <GoogleLog 
       googleLogScreen={googleLogScreen}
       setGoogleLogScreen={setGoogleLogScreen}
@@ -41,7 +41,7 @@ export default function Login({ setLoggedIn, socket, setUserName, userName, room
 
   return (
     <div className="login">
-      {googleLogScreen ? google : usernameLogin}
+      {googleLogScreen ? googleLog : usernameLogin}
     </div>
   )
 }

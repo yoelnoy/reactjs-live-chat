@@ -1,59 +1,97 @@
-.googlelog{
+.googleLogin-container{
+  height: 100vh;
+  width: 100%;  
+  display: flex;
+}
+.googleLogin__content{
+  height: 80vh;
+  padding: 2rem;
+}
+
+.googleLogin__right-title{
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.googleLogin__left{
+  width: 65%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.googleLogin__img{
+  width: 60%;
+}
+
+.googleLogin__right{
+  width: 35%;
+  height: 100vh;
+  background-color: #543fb5;
+  box-shadow: 7px 0px 19px 9px grey;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
-.googlelog__background{
-  background-color: white;
-  width: 30vw;
-  min-width: 430px;
-  height: 40vh;
-  opacity: 0.6;
-  position: absolute;
-}
-
-.googlelog__content{
+.googleLogin__icons{
   display: flex;
-  flex-direction: column;
-  width: 25vw;
-  min-width: 400px;
-  height: 22vh;
-  z-index: 2;
-  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  margin-top: 4%;
 }
 
-.googlelog__username_login{
-  background-color: white;
-  border: 0px;
-  height: 5vh;
+.icon{
+  font-size: 2.5rem;
+  color: white;
+  transition: all 0.5s ease;
 }
 
-.googleLogin__lgoogle_button{
-  background-color: #3f51b5 !important;
-  color: white !important;
-  text-align: center !important;
-  margin-bottom: 5%;
-  border: 0px !important;
-  box-shadow: none !important;
-  height: 5vh !important;
-  border-radius: 0px !important;
+.icon:hover{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  font-size: 2.7rem;
+  /* margin-top: 4%; */
+  color: rgb(238, 103, 103);
 }
+
 .googleLogin__lgoogle_button span{
-  width: 50vw !important;
-  border-radius: 0px !important;
-  padding-right: 15% !important;
+  background-color: white !important;
+  color: #543fb5 !important;
+  /* flex-grow: 1; */
 }
-.googleLogin__lgoogle_button div{
-  border-radius: 0px !important;
-  padding: 0px !important;
-  height: 5vh !important;
-  width: 9vw !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px !important;
+.googleLogin__lgoogle_button{
+  background-color: white !important;
+  margin-bottom: 4rem;
+  display: flex !important;
+  justify-content: center !important;
+  width: 100%;
 }
 
+.googleLogin__right-text{
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.googleLog__fotter{
+  color: #ffffffba;
+  font-size: 0.9rem;
+}
+
+.googleLog__fotter a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.googleLog__fotter a:hover{
+  text-decoration: none;
+  color: rgb(238, 103, 103);
+}

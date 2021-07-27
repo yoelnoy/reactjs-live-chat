@@ -21,7 +21,7 @@ function App() {
     //{room: "Public", userName: "Ariana Grande", userImg: "https://media.resources.festicket.com/www/artists/ArianaGrande.jpg", id: "uShDK7ECMFZnjj7zAAHF"}
   ]);
   const [googleDetails, setGoogleDetails] = useState([]);
-  
+  console.log(googleDetails);
   useEffect(() => {
     socket = io(SOCKET_URL);
     socket.on('connect',() => {   
@@ -30,11 +30,12 @@ function App() {
   }, [SOCKET_URL]);
 
   useEffect(() => {
-    googleDetails.forEach(u => {
-      setGoogleDetails(googleDetails)
-      setUserName(u.name)
-      setUserImage(u.imageUrl)
-    });
+      googleDetails.forEach(u => {
+        setGoogleDetails(googleDetails)
+        setUserName(u.name)
+        setUserImage(u.imageUrl)
+      });
+    
   })
 
   useEffect(() => {
@@ -82,8 +83,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* {loggedIn ? chat : login}       */}
-      <LoginScreen />      
+      {loggedIn ? chat : login}      
+      {/* <LoginScreen />       */}
     </div>
   );
 }

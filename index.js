@@ -6,7 +6,6 @@ const io = require("socket.io")(server,{cors:'*:*'});
 const cors = require("cors");
 const { SSL_OP_NO_TICKET } = require("constants");
 const PORT = process.env.PORT || 5000
-//.listen(process.env.PORT || 5000)
 
 app.use(cors());
 
