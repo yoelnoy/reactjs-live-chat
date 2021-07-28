@@ -56,19 +56,13 @@ export default function ChatKeyborad({ message, setMessage, socket, room, userNa
         timeStamp: timeStamp,
         img: userGoogleDetails.imageUrl
         }
-        // Content sent when user didnt login with google
-      /* content: {
-        id: socket.id,
-        author: {userName},
-        message: message,
-        timeStamp: timeStamp
-        } */
       };
 
       socket.emit("send_message", messageContent);
       setMessageList([...messageList, messageContent.content]);
       setMessage("");
       setIsOpen(false);
+      inputMessageRef.current.focus();
     } 
   };
 
@@ -114,14 +108,14 @@ export default function ChatKeyborad({ message, setMessage, socket, room, userNa
   // Text input of the keyboard
   const inputBox = (
     <input
-          ref={inputMessageRef}
-          id="messageInput"
-          type="text"
-          placeholder="Message..."
-          value={message}
-          onChange={(e) => {setMessage(e.target.value)}}
-        />
-  )
+      ref={inputMessageRef}
+      id="messageInput"
+      type="text"
+      placeholder="Message..."
+      value={message}
+      onChange={(e) => {setMessage(e.target.value)}}
+    />
+)
 
   // Send button of the keyboard
   const sendButton = (
