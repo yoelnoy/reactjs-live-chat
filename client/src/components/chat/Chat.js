@@ -5,6 +5,7 @@ import ChatHeader from '../chatHeader/ChatHeader'
 import ChatKeyborad from '../chatKeyboard/ChatKeyborad'
 import ChatMessages from '../chatMessages/ChatMessages'
 import ChooseRoom from './chooseRoom/ChooseRoom'
+import UsersBar from './usersBar/UsersBar'
 
 
 export default function Chat({ socket, room, setRoom, userImg, userName, setUserName, connectedUsers, setLoggedIn, googleDetails }) {
@@ -63,11 +64,19 @@ export default function Chat({ socket, room, setRoom, userImg, userName, setUser
     />
   )
 
+  const usersBar = (
+    <UsersBar 
+      userName = {userName}
+      googleDetails = {googleDetails}
+    />
+  )
+
   const chat = (
     <div className="chat__window">
       <SidePannel socket={socket} connectedUsers={connectedUsers} />
       <div className="chatContainer">
         {chatHeader}
+        {usersBar}
         {chatMessages}
         {chatKeyborad}
       </div>

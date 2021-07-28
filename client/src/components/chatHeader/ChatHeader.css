@@ -4,7 +4,7 @@
   padding: 1vh 3vh 1vh 3vh;
   display: flex;
   flex-direction: row;
-  height: 5vh
+  /* height: 5vh */
 }
 .chat__header_user{
   width: 33%;
@@ -15,9 +15,7 @@
 }
 
 .chat__header_user img{
-  border-radius: 50%;
-  width: 40px;
-  margin-right: 5%;
+  display: none;
 }
 
 .chat__header_room{
@@ -39,3 +37,75 @@
 .chat__header_username img{
   width: 50px;
 }
+
+/* ///////////////////////////////////////////// 780 ////////////////////////////////// */
+
+@media only screen and (min-width:  767px){
+  .chat__header_user img{
+    display: block;
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 5%;
+  }
+}
+
+
+/* ///////////////////////////////////////////// 1024 ////////////////////////////////// */
+  
+  @media only screen and (min-width:  1024px){
+    .chat__header_user img{
+      display: block;
+      border-radius: 50%;
+      width: 40px;
+      margin-right: 5%;
+    }
+  }
+
+  
+/* ///////////////////////////////////////////// 1200 ////////////////////////////////// */
+  
+  @media only screen and (min-width: 1200px){
+    .chat__header{
+      background-color: #3f51b5;
+      color: white;
+      padding: 1vh 3vh 1vh 3vh;
+      display: flex;
+      flex-direction: row;
+      height: 5vh
+    }
+    .chat__header_user{
+      width: 33%;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .chat__header_user img{
+      display: block;
+      border-radius: 50%;
+      width: 40px;
+      margin-right: 5%;
+    }
+    
+    .chat__header_room{
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 1.3rem;
+    }
+    
+    .chat__header_utils{
+      width: 33%;
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .chat__header_username img{
+      width: 50px;
+    }
+    
+  }

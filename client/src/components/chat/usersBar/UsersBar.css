@@ -1,0 +1,38 @@
+.usersBar-container{
+  border-bottom: 0.5px solid grey;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* height: 5; */
+}
+
+.usersBar__user-img{
+  border-radius: 50%;
+  width: 2rem;
+  padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+  overflow-y: scroll;
+}
+
+/* ///////////////////////////////////////////// 780 ////////////////////////////////// */
+
+@media only screen and (min-width:  767px){
+  .usersBar-container{
+    display: none;
+  }
+}
+
+/* ///////////////////////////////////////////// 1024 ////////////////////////////////// */
+  
+  @media only screen and (min-width:  1024px){
+    .usersBar-container{
+      display: none;
+    }
+  }
+  
+/* ///////////////////////////////////////////// 1200 ////////////////////////////////// */
+  
+  @media only screen and (min-width: 1200px){
+    .usersBar-container{
+      display: none;
+    }
+  }

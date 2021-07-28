@@ -3,6 +3,7 @@ import './ChooseRoom.css'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import { AiOutlineLogout } from 'react-icons/ai';
+import Logo from '../../../utils/media/live-chat-logo.png'
 
 export default function ChooseRoom({ setRoom, setLoggedIn, socket, room, userName, userImg, serRoomChosen }) {
 
@@ -28,9 +29,10 @@ export default function ChooseRoom({ setRoom, setLoggedIn, socket, room, userNam
 
   return (
     <div className="chooseRoom_container">
-      <div className="chooseRoom__background"></div>
       <div className="chooseRoom__content">
-        <AiOutlineLogout className="chooseRoom__backButton" />
+        <div className="chooseRoom__backButton">
+        {/* <AiOutlineLogout className="chooseRoom__backButton-icon" /> */}
+        </div>
         <div className="inputs">
           <TextField 
             className="inputs_textField"
@@ -44,6 +46,9 @@ export default function ChooseRoom({ setRoom, setLoggedIn, socket, room, userNam
           />
         </div>
         <Button variant="contained" size="large" color="primary" onClick={connectToRoom}>Enter Chat</Button>
+        <div className="chooseRoom__logo">
+          <img src={Logo} alt="" className="chooseRoom__logo-img"/>
+        </div>
       </div>
     </div>
   )

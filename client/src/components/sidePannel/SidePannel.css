@@ -1,20 +1,80 @@
 .sidePannelContainer{
-  width: 20vw;
-  min-width: 200px;
-  height: 100vh;
+  display: none;
 }
 
-.sidePannelTitle{
-  text-align: left;
-  border-right: solid 0.01rem #ffffff45;
-  border-bottom: solid 0.5px #eaeaea;
-  padding: 1vh 3vh 1vh 3vh;
-  color: white;
-  background-color: #3f51b5;
-  font-size: 1.3rem;
-  height: 5vh;
-  display: flex;
-  align-items: center;
+
+/* ///////////////////////////////////////////// 780 ////////////////////////////////// */
+
+@media only screen and (min-width:  767px){
+
+  .sidePannelContainer{
+    display: block;
+    width: 20vw;
+    min-width: 200px;
+    height: 100vh;
+  }
+  
+  .sidePannelTitle{
+    text-align: left;
+    border-right: solid 0.01rem #ffffff45;
+    border-bottom: solid 0.5px #eaeaea;
+    padding: 1vh 3vh 1vh 3vh;
+    color: white;
+    background-color: #3f51b5;
+    font-size: 1.3rem;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+  }
 }
 
+/* ///////////////////////////////////////////// 1024 ////////////////////////////////// */
+  
+  @media only screen and (min-width:  1024px){
+
+    .sidePannelContainer{
+      display: block;
+      width: 20vw;
+      min-width: 200px;
+      height: 100vh;
+    }
+    
+    .sidePannelTitle{
+      text-align: left;
+      border-right: solid 0.01rem #ffffff45;
+      border-bottom: solid 0.5px #eaeaea;
+      padding: 1vh 3vh 1vh 3vh;
+      color: white;
+      background-color: #3f51b5;
+      font-size: 1.3rem;
+      height: 5vh;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+/* ///////////////////////////////////////////// 1200 ////////////////////////////////// */
+  
+  @media only screen and (min-width: 1200px){
+
+    .sidePannelContainer{
+      display: block;
+      width: 20vw;
+      min-width: 200px;
+      height: 100vh;
+    }
+    
+    .sidePannelTitle{
+      text-align: left;
+      border-right: solid 0.01rem #ffffff45;
+      border-bottom: solid 0.5px #eaeaea;
+      padding: 1vh 3vh 1vh 3vh;
+      color: white;
+      background-color: #3f51b5;
+      font-size: 1.3rem;
+      height: 5vh;
+      display: flex;
+      align-items: center;
+    }
+  }
 

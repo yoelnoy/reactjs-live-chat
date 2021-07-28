@@ -1,8 +1,7 @@
 .messages {
-  height: 75vh;
+  height: 71vh;
   overflow-y: auto;
-  width: 75%;
-  margin: auto;
+  width: 100%;
   padding: 1em 0em 1em 0em;
 }
 
@@ -27,4 +26,37 @@
   width: fit-content;
   padding: 0.2rem 1rem 0.2em 1rem;
   border-radius: 5rem;
+}
+
+/* ///////////////////////////////////////////// 780 ////////////////////////////////// */
+
+@media only screen and (min-width:  767px){
+  .messages {
+    height: 80vh;
+    overflow-y: auto;
+    width: 100%;
+    padding: 1em 0em 1em 0em;
+  }
+}
+
+/* ///////////////////////////////////////////// 1024 ////////////////////////////////// */
+  
+  @media only screen and (min-width:  1024px){
+    .messages {
+      height: 85vh;
+      overflow-y: auto;
+      width: 90%;
+      padding: 1em 0em 1em 0em;
+    }
+}
+  
+/* ///////////////////////////////////////////// 1200 ////////////////////////////////// */
+  
+  @media only screen and (min-width: 1200px){
+    .messages {
+      height: 74vh;
+      overflow-y: auto;
+      width: 90%;
+      padding: 1em 0em 1em 0em;
+    }
 }

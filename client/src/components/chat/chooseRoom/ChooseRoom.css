@@ -1,40 +1,42 @@
 .chooseRoom_container {
   height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url('../../../utils/media/forest_background_trans.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  animation: fadeIn 1s ease;
 }
 
-.chooseRoom__background{
-  background-color: white;
-  width: 30vw;
-  min-width: 430px;
-  height: 45vh;
-  opacity: 0.6;
-  position: absolute;
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .chooseRoom__content{
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  width: 25vw;
-  min-width: 400px;
-  height: 38vh;
-  z-index: 2;
-  position: absolute;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  /* border: solid 0.5px #3f51b5; */
+  padding: 2rem;
+  position: relative;
 }
 
 .chooseRoom__backButton{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
+
+.chooseRoom__backButton-icon{
   margin-bottom: 3%;
   color: #3f51b5;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .inputs{
@@ -66,7 +68,158 @@
 .MuiOutlinedInput-root {
   border-radius: 0px !important;
 }
+
+.MuiFormLabel-root {
+  font-size: 0.9rem !important;
+}
+
 .MuiInputLabel-outlined {
   width: 92%;
   text-align: center !important;
 }
+
+.chooseRoom__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+.chooseRoom__logo-img{
+  width: 20%;
+}
+
+
+/* ///////////////////////////////////////////// 780 ////////////////////////////////// */
+
+@media only screen and (min-width:  767px){
+
+  .chooseRoom_container {
+    animation: fadeIn 1s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .MuiFormLabel-root {
+    font-size: 1.5rem !important;
+  }
+
+  .MuiButton-containedSizeLarge {
+    font-size: 1.5rem !important;
+  }
+
+  .chooseRoom__backButton-icon {
+    font-size: 2rem;
+  }
+
+}
+
+ /* ///////////////////////////////////////////// 1200 ////////////////////////////////// */
+   
+   @media only screen and (min-width: 1200px){
+    
+    .chooseRoom_container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    
+    .chooseRoom__content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 25vw;
+      min-width: 400px;
+      height: 50%;
+      padding: 2rem;
+      position: relative;
+    }
+    
+    .chooseRoom__backButton{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .chooseRoom__backButton-icon{
+      margin-bottom: 3%;
+      color: #3f51b5;
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .chooseRoom__backButton-icon:hover{
+      color: #8a8a8a;
+    }
+    
+    .inputs{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    } 
+    
+    .inputs_textField{
+      margin-top: 4% !important;
+      border-radius: 0px !important;
+      background-color: white;
+    } 
+    
+    .chooseRoom__content button{
+      border-radius: 0px;
+      background-color: #3f51b5;
+      color: white;
+      box-shadow: 0px !important;
+      margin-top: 10%;
+      width: 100%;
+    }
+    
+    .MuiButton-contained {
+      box-shadow: none !important;
+    }
+    
+    .MuiOutlinedInput-root {
+      border-radius: 0px !important;
+    }
+    .MuiInputLabel-outlined {
+      width: 92%;
+      text-align: center !important;
+    }
+
+    .chooseRoom__logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 0.5rem;
+    }
+    
+    .chooseRoom__logo-img{
+      width: 20%;
+    }
+
+    .MuiFormLabel-root {
+      font-size: 1.3rem !important;
+    }
+
+    .MuiButton-containedSizeLarge {
+      font-size: 1.3rem !important;
+    }
+
+   }
