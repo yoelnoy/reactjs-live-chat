@@ -52,11 +52,11 @@ export default function GoogleLog({ googleDetails, setGoogleDetails, setLoggedIn
             <h2 className="googleLogin__right-title">Sign In</h2>
             {googleLogin}
             <div className="googleLogin__right-text">
-              <h3>
+              <h3 className="googleLogin__right-text-h3">
                 Live chat application allows to send instant live messages between users.
               </h3>
 
-              <h3>
+              <h3 className="googleLogin__right-text-h3">
                 This project was develpoed with React.js on the front end and Node.js 
                 on the back end. 
                 Using Socket.io, i was able to creat realtime, bi-directional 
